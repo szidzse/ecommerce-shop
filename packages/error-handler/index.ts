@@ -3,7 +3,12 @@ export class AppError extends Error {
   public readonly isOperational: boolean;
   public readonly details?: any;
 
-  constructor(message: string, statusCode: number, isOperational = true, details?: any) {
+  constructor(
+    message: string,
+    statusCode: number,
+    isOperational = true,
+    details?: any,
+  ) {
     super(message);
     this.statusCode = statusCode;
     this.isOperational = isOperational;
@@ -11,7 +16,6 @@ export class AppError extends Error {
     Error.captureStackTrace(this);
   }
 }
-
 
 // Not found error
 export class NotFoundError extends AppError {

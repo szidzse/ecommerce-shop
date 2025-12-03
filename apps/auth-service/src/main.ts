@@ -1,4 +1,4 @@
-import express from 'express';
+import express from "express";
 import cors from "cors";
 
 const app = express();
@@ -7,12 +7,12 @@ app.use(
   cors({
     origin: ["http://localhost:3000"],
     allowedHeaders: ["Authorization", "Content-Type"],
-    credentials: true
+    credentials: true,
   }),
 );
 
-app.get('/', (req, res) => {
-    res.send({ 'message': 'Hello API'});
+app.get("/", (req, res) => {
+  res.send({ message: "Hello API" });
 });
 
 const port = process.env.PORT || 6001;
