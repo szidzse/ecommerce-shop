@@ -45,3 +45,8 @@ Thumbs.db
 .github/instructions/nx.instructions.md
 
 test-output
+
+# Environment variables
+.env*
+
+/generated/prisma
