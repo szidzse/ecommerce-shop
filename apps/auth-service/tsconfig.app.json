@@ -1,7 +1,7 @@
 {
-  "extends": "../../tsconfig.base.json",
+  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "out-tsc/auth-service",
+    "outDir": "../../dist/out-tsc",
     "types": [
       "node", "express"
     ],
@@ -10,7 +10,6 @@
   },
   "include": [
     "src/**/*.ts",
-    "../../packages/**/*.ts",
   ],
   "exclude": [
     "out-tsc",
