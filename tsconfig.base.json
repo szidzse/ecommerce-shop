@@ -16,6 +16,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "es2022",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["apps/*/src"]
+    },
     "customConditions": ["@ecommerce-shop/source"]
   }
 }
